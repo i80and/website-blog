@@ -1,4 +1,4 @@
-.PHONY: build
+.PHONY: build deploy
 
 build:
 	hugo
@@ -8,3 +8,6 @@ build:
 	find ./public -name "*.svg" -exec zopfli {} --i50 \;
 	find ./public -name "*.xml" -exec zopfli {} --i50 \;
 	find ./public -name "*.ico" -exec zopfli {} --i50 \;
+
+deploy: build
+	fab deploy -H andrew@foxquill.com -s "/bin/ksh -c"
