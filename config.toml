@@ -1,0 +1,4 @@
+baseurl = "https://blog.foxquill.com"
+languageCode = "en-us"
+title = "A Thought Per Year"
+theme = "black-and-light"
