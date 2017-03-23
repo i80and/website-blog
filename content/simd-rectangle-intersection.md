@@ -42,10 +42,14 @@ Can we speed up rectangle intersection checks? Yes we can!
       return SIMD.Bool32x4.allTrue(maskLT)
     }
 
-#Caveats
+Caveats
+=======
+
 `rectIntersectsSIMD()` yields a false positive if `r2.x1 == r1.x2` or `r2.y1 == r1.y2`. This is because the `<` is transformed into `<=` so we can use a single SIMD op.
 
-#Results
+Results
+=======
+
 Benchmark run using [jsperf](https://jsperf.com/simdrectanglegniwer) on Firefox Nightly 53.0a2 (2017-01-30).
 
 <table>
