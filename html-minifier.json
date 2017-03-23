@@ -1,6 +1,5 @@
 {
     "collapseBooleanAttributes": true,
-    "collapseInlineTagWhitespace": true,
     "collapseWhitespace": true,
     "decodeEntities": true,
     "html5": true,
