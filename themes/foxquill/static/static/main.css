@@ -1,3 +1,6 @@
+breakpoint(SUPERWIDE, min-device-width: 1500px)
+breakpoint(PHONE, max-device-width: 400px)
+
 @font-face{
   font-family: Cinzel;
   font-style: normal;
@@ -35,8 +38,18 @@ body {
   font-size: 16pt;
 }
 
-#skunk {
-  float:right;
+selector(#skunk) {
+  float: right;
+  width: 400px;
+
+  on(SUPERWIDE)
+    position: absolute;
+    left: 1100px;
+  end
+
+  on(PHONE)
+    float: none;
+  end
 }
 
 #skunk > div {
@@ -296,7 +309,7 @@ footer {
   clear: both;
 }
 
-@media (max-width: 750px) {
+@media only screen and (max-width: 800px) {
   body {
     padding-left:20px;
     padding-right:20px;
@@ -322,6 +335,11 @@ footer {
 
   #content h2 {
     font-size:22px;
+  }
+
+  #skunk {
+    float: none;
+    width: 400px;
   }
 }
 

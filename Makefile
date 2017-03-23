@@ -12,4 +12,4 @@ clean:
 	rm -rf themes/foxquill/static/static/main.min.css public
 
 themes/foxquill/static/static/main.min.css: themes/foxquill/static/static/main.css
-	./node_modules/.bin/cleancss -O2 restructureRules:on,mergeSemantically:on -o $@ $^
+	hasp $^ | ./node_modules/.bin/cleancss -O2 restructureRules:on,mergeSemantically:on -o $@
