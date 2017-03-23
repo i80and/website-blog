@@ -1,5 +1,5 @@
 breakpoint(SUPERWIDE, min-device-width: 1500px)
-breakpoint(PHONE, max-device-width: 400px)
+breakpoint(PHONE, max-device-width: 768px)
 
 @font-face{
   font-family: Cinzel;
@@ -40,7 +40,7 @@ body {
 
 selector(#skunk) {
   float: right;
-  width: 400px;
+  max-width: 400px;
 
   on(SUPERWIDE)
     position: absolute;
@@ -65,7 +65,7 @@ selector(#skunk) {
 
 .infoboxes td {
   vertical-align:top;
-  width:300px;
+  max-width:300px;
   padding:20px;
 }
 
@@ -330,11 +330,6 @@ footer {
 
   #content h2 {
     font-size:22px;
-  }
-
-  #skunk {
-    float: none;
-    width: 400px;
   }
 }
 
