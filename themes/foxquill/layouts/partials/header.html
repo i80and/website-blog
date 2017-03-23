@@ -41,6 +41,7 @@
       <li>A programmer.</li>
     </ul>
 
+    {{ if not .Content }}
     <table class="infoboxes">
       <tr>
         <td>
@@ -70,3 +71,4 @@
         </td>
       </tr>
     </table>
+    {{ end }}
