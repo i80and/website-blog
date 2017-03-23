@@ -1,3 +1,4 @@
 /public/
 *.pyc
 node_modules/
+main.min.css
