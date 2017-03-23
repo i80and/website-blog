@@ -6,9 +6,11 @@
        url(https://fonts.gstatic.com/s/cinzel/v4/i2BwM1Eq2JyiNOY_VrkubOvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2'),
        url(https://fonts.gstatic.com/s/cinzel/v4/Hm1qjDlZpOdVXoa-QGE7_w.ttf) format('truetype');
 }
+
 html {
   margin: 0;
 }
+
 * {
   border:0;
   vertical-align:baseline;
@@ -30,6 +32,7 @@ body {
   padding-left: 40px;
   list-style-type: none;
   overflow: hidden;
+  font-size: 16pt;
 }
 
 #skunk {
