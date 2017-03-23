@@ -268,11 +268,6 @@ h1,h2 {
   margin-right:0;
 }
 
-.back {
-  position: absolute;
-  left: 50px;
-}
-
 #content {
   text-align:left;
   width:100%;
