@@ -30,7 +30,6 @@ body {
   padding-left: 40px;
   list-style-type: none;
   overflow: hidden;
-  font-size: 16pt;
 }
 
 #skunk {
@@ -312,7 +311,6 @@ footer {
   #content {
     margin-top:0;
     padding-top:50px;
-    font-size:14px;
   }
 
   #content h1 {
@@ -321,10 +319,6 @@ footer {
 
   #content h2 {
     font-size:22px;
-  }
-
-  .posts_listing li div {
-    font-size:12px;
   }
 }
 
@@ -339,14 +333,12 @@ footer {
   }
 
   #nav li {
-    font-size:12px;
     padding: 0 10px;
   }
 
   #content {
     margin-top:0;
-    padding-top:20px;
-    font-size:12px;
+    padding-top:0;
   }
 
   #content h1 {
@@ -370,5 +362,9 @@ footer {
   table.infoboxes td {
   display:block;
   padding:0;
+  }
+
+  #content {
+    margin-left:0;
   }
 }
