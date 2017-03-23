@@ -65,7 +65,7 @@ selector(#skunk) {
 
 .infoboxes td {
   vertical-align:top;
-  max-width:300px;
+  width:300px;
   padding:20px;
 }
 
