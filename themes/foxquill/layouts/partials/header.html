@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <base href="{{ .Site.BaseURL }}">
+    {{ if .Site.Params.description }}<meta name="description" content="{{ .Site.Params.description }}">{{ end }}
+
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+    <link rel="stylesheet" href="static/main.css">
+
+    <title>
+      {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+      {{ if eq $url "/" }}
+        {{ .Site.Title }}
+      {{ else }}
+        {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}
+      {{ end }}
+    </title>
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    {{ if .RSSLink }}
+      <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end }}
+  </head>
+
+  <body>
+    <div id="skunk">
+      <img src="/static/images/punk-skunk-rounded.jpg" width="400px" height="485.6px" alt="Punk Skunk" title="The punkest of skunks -- art by @ritwells" />
+      <div>Art by <a href="https://twitter.com/ritwells">@ritwells</a></div>
+    </div>
+    <ul id="description">
+      <li>A Christian.</li>
+      <li>A geek.</li>
+      <li>A hacker.</li>
+      <li>A programmer.</li>
+    </ul>
+
+    <table class="infoboxes">
+      <tr>
+        <td>
+          <div class="boxdesc">On the Web</div>
+          <ul>
+            <li><a href="https://twitter.com/i80and">Twitter</a></li>
+            <li><a href="https://github.com/i80and">GitHub</a></li>
+          </ul>
+        </td>
+        <td>
+          <div class="boxdesc">Projects</div>
+          <ul>
+            <li><a href="https://www.npmjs.com/package/greni">greni</a></li>
+            <li><a href="https://vetshelf.com/">vetshelf</a></li>
+            <li><a href="https://vixeno.com/">vixeno</a></li>
+          </ul>
+        </td>
+        <td>
+          <div class="boxdesc">Sites You Should Visit</div>
+          <ul>
+            <li><a href="http://varnull.adityamukerjee.net/">Aditya Mukerjee</a></li>
+            <li><a href="http://blog.justaskinnyboy.com/">Remember, You Are Not Alone</a></li>
+            <li><a href="http://seanyeh.com/">Sean Yeh</a></li>
+            <li><a href="https://technobabbl.es/">Technobabbles</a></li>
+            <li><a href="http://zencephalon.com/">Zencephalon</a></li>
+          </ul>
+        </td>
+      </tr>
+    </table>

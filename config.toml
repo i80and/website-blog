@@ -1,4 +1,7 @@
-baseurl = "https://blog.foxquill.com"
+baseurl = "https://foxquill.com"
 languageCode = "en-us"
 title = "A Thought Per Year"
-theme = "black-and-light"
+theme = "foxquill"
+
+disable404 = false
+disableHugoGeneratorInject = false
