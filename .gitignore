@@ -1,2 +1,3 @@
 /public/
 *.pyc
+node_modules/

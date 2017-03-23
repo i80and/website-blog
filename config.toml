@@ -3,5 +3,5 @@ languageCode = "en-us"
 title = "A Thought Per Year"
 theme = "foxquill"
 
-disable404 = false
-disableHugoGeneratorInject = false
+disable404 = true
+disableHugoGeneratorInject = true
