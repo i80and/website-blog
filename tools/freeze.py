@@ -5,7 +5,7 @@ import os
 import re
 
 PAT_TAG = re.compile(r'<[^>]+>')
-PAT_STATIC = re.compile(r'^.+\.(?:css|js|jpg|jpeg|png|ico)$')
+PAT_STATIC = re.compile(r'^.+\.(?:css|js|jpg|jpeg|png|ico|webm)$')
 PAT_NEEDS_FIXUP = re.compile(r'^.+\.(?:html|xml)$')
 
 
