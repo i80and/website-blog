@@ -1,6 +1,6 @@
 .PHONY: build deploy clean
 
-build: themes/foxquill/static/static/main.min.css
+build: themes/foxquill/static/static/main.min.css node_modules/.EXISTS
 	rm -rf public/*
 	hugo
 	./node_modules/.bin/html-minifier -c html-minifier.json --file-ext=html --input-dir=public/ --output-dir=public/
@@ -13,5 +13,9 @@ deploy: build
 clean:
 	rm -rf themes/foxquill/static/static/main.min.css public
 
-themes/foxquill/static/static/main.min.css: themes/foxquill/static/static/main.css
-	hasp $^ | ./node_modules/.bin/cleancss -O2 restructureRules:on,mergeSemantically:on -o $@
+themes/foxquill/static/static/main.min.css: themes/foxquill/static/static/main.css node_modules/.EXISTS
+	tools/hasp $^ | ./node_modules/.bin/cleancss -O2 restructureRules:on,mergeSemantically:on -o $@
+
+node_modules/.EXISTS:
+	npm install
+	touch $@
