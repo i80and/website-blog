@@ -1,4 +1,5 @@
-baseurl = "https://foxquill.com"
+baseurl = ""
+relativeurls = true
 languageCode = "en-us"
 title = "A Thought Per Year"
 theme = "foxquill"
